@@ -51,15 +51,22 @@ def getSubsentence(text, splitinto):
 def normText(text):
 	text = re.sub(r"[-,\(\)]"," ", text);
 	return re.sub(r"[^a-zA-Z0-9\s]", "", text)
+	
+def split(delimiters, string, maxsplit=0):
+    import re
+    regexPattern = '|'.join(map(re.escape, delimiters))
+    return re.split(regexPattern, string, maxsplit)
 
 if __name__ == '__main__' : 
 	import sys
-	with open(sys.argv[1]) as f:
-		for line in f:
-			sentences = line.split(".")
-			for sentence in sentences:
-				print ""
-				#print sentence
-				print getSubsentence(normText(sentence), [11]);
-
-
+	with open(sys.argv[2]) as g:
+		stopwords = [re.sub(r"\n", "", line) for line in g.readlines()];
+		print stopwords
+		with open(sys.argv[1]) as f:
+			for line in f:
+				line = normText(line)
+				sentences = split(stopwords, line)
+				for sentence in sentences:
+					print ""
+					#print sentence
+					print getSubsentence(normText(sentence), [11]);
