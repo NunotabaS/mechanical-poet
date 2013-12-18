@@ -1,0 +1,16 @@
+Names:
+Rephrase a sentence based on syllables and content
+
+Introduction:
+We divide sentences according to syllables. You need to rephrase them to a 5-7-5 syllable structure without changing the core content. 
+
+Keywords:
+rephrase, sentence, linguistic, poetry, literature
+
+Instructions:
+You're alowed to delete whole section of a sentence, or move words across different sections. The initial division is just to assist you in rephrasing the sentences.
+The core content of a sentence includes subject, verb and object. You can add other parts based on their relevance. 
+One way to determine syllables is to find  independent "a", "e", "i", "o", "u", which means "ae", "ou", "eo" count as one syllable. For example "apple" has two syllables.
+Hopefully, we can break the sentences naturally into the 5-7-5 syllable structure. If not, we can just try to get as close as possible. 
+For those very short sentences, it's ok to only fill in the first one or two parts of the syllable structure. 
+We only provide 6 text areas even though some sentences are quite long. We encourage you to make the sentence consice and succinct
